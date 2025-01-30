@@ -14,8 +14,8 @@
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <project-folder>
+git clone https://github.com/akhelij/brand-x-challenge.git
+cd brand-x-challenge
 composer install
 ```
  2. here the .env file used in the project 
@@ -25,7 +25,7 @@ APP_ENV=local
 APP_KEY=base64:5tZPecbIBBMIDjyov+8jdSDPsF3/gvyvAoFTcx0Y+yg=
 APP_DEBUG=true
 APP_TIMEZONE=UTC
-APP_URL=http://laravel-challange-akhelij-2082.test
+APP_URL=http://brand-x-challenge.test/
 
 APP_LOCALE=en
 APP_FALLBACK_LOCALE=en
@@ -79,7 +79,7 @@ php artisan queue:work --tries=3 --max-jobs=1000 --sleep=3 --timeout=300
 
 5. Batch import employees:
 ```bash
-curl -X POST -F "type=csv" -F "file=@import.csv" http://your-app.test/api/v1/employee
+curl -X POST -F "type=csv" -F "file=@import.csv" http://brand-x-challenge.test/api/v1/employee
 ```
 
 Cross fingers and enjoy!
